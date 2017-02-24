@@ -1,0 +1,151 @@
+/** {
+    outline: 1px dashed red;
+    padding: 0px;
+    margin: 0px;
+}*/
+
+.container{
+    margin: 0px auto;
+    background-color: white;
+    width: 1000px;
+    font-family: verdana;
+}
+
+.main {
+    margin: 40px;
+    background-color: #2d4e84;
+    height: 440px;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    /*margin-top: -5px; */
+    margin-bottom: 10px;
+}
+
+.search {
+    display: inline-block;
+    vertical-align: top;
+    background-color: grey;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 340px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.button {
+    display: inline-block;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    margin: auto;
+    width: 10px;
+}
+
+.menu {
+    margin: auto;
+    background-color: #81a0d3;
+    width: 800px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    
+}
+
+.menu_text {
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+.side_menu {
+    width: 200px;
+    padding-left: 80px;
+    padding-top: 20px;
+    font-size: .90em;
+    text-align: center;
+    display: inline-block;
+}
+
+.history {
+    display: inline-block;
+    vertical-align: top;
+    width: 550px;
+    padding-top: -20px;
+    text-align: center;
+    color: white;
+    font-size: .75em;
+}
+
+.middle_left {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+    width: 350px;
+    font-size: .75em;
+    text-align: center;
+}
+
+.middle_right {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 110px;
+    width: 350px;
+    font-size: .75em;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    background-color: #2d4e84;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+
+#right {
+    color: white;
+    font-size: .80em;
+    margin-left: 730px;
+    padding-top: 10px;
+}
+
+#zen_quotes {
+    color: yellow;
+    font-style: italic;
+
+}
+
+#zen {
+    color: white;
+    padding-top: 20px;
+}
+
+#middle_links a {
+    color: #81a0d3;
+}
+
+#copr {
+    font-size: .75em;
+
+}
+
+a {
+    color: yellow;
+}
+
+
+

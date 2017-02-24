@@ -1,0 +1,14 @@
+cd test
+
+touch index.html styles.css commands.txt
+
+cp index.html index_2.html
+
+del styles.css
+
+cd ..
+
+mv index_2 ../Destination/index_2.html
+
+rm -rf destination
+
