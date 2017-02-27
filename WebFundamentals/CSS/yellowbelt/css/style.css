@@ -1,0 +1,297 @@
+* {
+    /*outline: 1px dashed red;*/
+    padding: 0px;
+    margin: 0px;
+}
+
+.about-text-right {
+    display: inline-block;
+    vertical-align: top;
+    width: 290px;
+    margin-top: -42px;
+    margin-left: 30px;
+}
+
+.button {
+    background-color: #15499b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-left: 0px;
+    width: 100px;
+}
+
+/* BOTTOM */
+.callouts--bottom:before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 23px;
+	bottom: -42px;
+  border: 10px solid transparent;
+  border-top: 32px solid rgb(193,193,193); /* IE8 Fallback */
+  border-top: 32px solid rgba(193,193,193,0.5);
+  z-index: 2;
+}
+
+.callouts {
+  list-style-type: none;
+}
+
+li + li {
+  margin-left: 3.3333%;
+}
+
+/* BASE STYLES FOR EACH */
+.callouts li {
+  display: inline-block;
+  /* Real styles */
+  position: relative;
+	width: 259px;
+	height: 80px;
+  padding: 15px;
+	background-color: #b8cef2;
+  /*border: 1px solid #c1c1c1;
+	border-radius: 4px;*/
+	/*box-shadow: 0 0 10px #c1c1c1;*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.callouts--bottom:after {
+  content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 25px;
+	bottom: -31px;
+  border: 8px solid transparent;
+  border-top: 24px solid #b8cef2;
+  z-index: 3;
+}
+
+
+.container {
+    margin: auto;
+    width: 1000px;
+    background-color: black;
+}
+
+.box-1 {
+    display: inline-block;
+    vertical-align: top;
+    height: 200px;
+    width: 265px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    background-color: #2061c9;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.box-1-text {
+    width: 250px;
+    color: white;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.box-2 {
+    display: inline-block;
+    vertical-align: top;
+    height: 200px;
+    width: 265px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    background-color: #2061c9;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 10px;    
+}
+
+.box-2-text {
+    width: 250px;
+    color: white;
+    font-size: 12px;
+    padding-top: 6px;
+}
+
+.box-3 {
+    display: inline-block;
+    vertical-align: top;
+    height: 200px;
+    width: 265px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    background-color: #2061c9;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 10px;    
+}
+
+.box-3-text {
+    width: 250px;
+    color: white;
+    font-size: 12px;
+    padding-top: 4px;
+}
+
+.footer {
+    margin-top: -13px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    background-color: #b8cef2;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.footer-text {
+    text-align: center;
+}
+
+.header {
+    padding-top: 10px;
+    padding-left: 30px;
+    background-color: black;
+}
+
+.main {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    background-color: white;
+}
+
+.menu {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 75px;
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1 {
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 30px;
+}
+
+h2 {
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 3px;
+}
+
+h3 {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#about {
+    margin-left: 60px;
+    color: white;
+}
+
+#about-text-top {
+    display: inline-block;
+    vertical-align: top;
+    width: 290px;
+    margin-top: 0px;
+    margin-left: 50px;
+    font-size: 12px;
+}
+
+#bordering {
+    border-color: white;
+    border-style: solid;
+    border-width: 15px;
+}
+
+#clients {
+    margin-left: 60px;
+    color: white;
+}
+
+#consulting {
+    color: dodgerblue;
+}
+
+#bldg_pic {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+    padding-bottom: 15px;
+}
+
+#home {
+    margin-left: 20px;
+}
+
+#learn_more {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2061c9;
+}
+
+
+#home-footer {
+    color: dodgerblue;
+}
+
+#projects {
+    margin-left: 60px;
+    color: white;
+}
+
+#sam_jones {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+#services {
+    margin-left: 60px;
+    color: white;
+}
+
+#testimonial {
+    margin-left: -15px;
+}
