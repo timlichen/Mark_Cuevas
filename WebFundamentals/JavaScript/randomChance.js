@@ -1,25 +1,34 @@
 // Make a random function that takes a number of quarters
 // 1 quarter = 1 play
 
-
-var games = 10;
-
-var plays = Math.floor(Math.random(plays)*100);
+// the player's number
+var plays = Math.floor(Math.random()*100);
 //console.log(plays)
 
-function slotPlay(games) {
-    for(var i = 0; i < games; i++) {
-        // the number to match
-        currentPlay =  Math.floor(Math.random(plays)*100);
 
+function slotPlay(games) {
+    // the number to match
+    currentPlay =  Math.floor(Math.random()*100);
+
+    for(var i = 0; i < games; i++) {
+        // winning play
         if(currentPlay == plays) {
-            currentPlay = currentPlay + 50                  // test it with 50
+            games = games + getWins()
+            console.log("You won " + games + "games.")
             //break;
             return games;
         }
-        //return games;
     }
-    console.log("Sorry, no luck.")
+    // losing play
+    console.log("Sorry, no luck. My value is: " + plays + "; Computer's value is: " + currentPlay)
 }
 
 slotPlay(20);
+
+
+function getWins(min, max) {
+    min = 50;
+    max = 100;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+//console.log(getWins());
