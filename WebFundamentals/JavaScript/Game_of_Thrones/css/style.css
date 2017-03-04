@@ -1,0 +1,23 @@
+* {
+    /*outline: 1pt solid red;*/
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+.details {
+    border: 1px solid black;
+    margin-top: 10px;
+    padding-left: 20px;
+    width: 1095px;
+}
+
+img {
+    width: 275px;
+    height: 200px;
+}
+
