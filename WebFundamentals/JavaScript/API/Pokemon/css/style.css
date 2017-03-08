@@ -1,0 +1,12 @@
+* {
+    /*outline: 1px solid red;*/
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}

@@ -1,5 +1,0 @@
-pip list lists the installed python packages, including editables.
-
-pip freeze outputs the installed packages in requirements format.
-
-pip requirements contains all the libraries that we need for our web apps.

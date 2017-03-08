@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mark's jQuery Samples</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+        <!-- jQuery -->
+        <script type="text/javascript">
+        $( document ).ready(function() 
+        {
+            // AddClass
+            $( '#btn_addClass' ).click(function() 
+            {
+                $( '.addClass' ).addClass( "makeRed");
+            });
+            
+            // SlideToggle 
+            $( '#btn_slideToggle').click(function() 
+            {
+                $( '#book').slideToggle("slow", function()
+                {
+                    // starts off hidden
+                    // toggles between display: none and display: inline
+                })
+            });
+
+            // Append 
+            $( '#btn_append' ).click(function() 
+            {
+                $( ".append" ).append( "<br /><br /><p>The <code>.append()</code> method inserts the specified content as the last child of each element in the jQuery collection. To insert it as the first child, we would use <code>.prepend()</code>.</p>" );
+            });
+
+            // Click 
+            $( '#btn_click' ).click(function() 
+            {
+                alert( "You clicked the .click() event!" );
+            });
+
+            // Hide 
+            $( '#btn_hide' ).click(function() 
+            {
+                $( ".hide" ).hide();
+            });
+
+            // Show 
+            $( '#btn_show' ).click(function() 
+            {
+                $( "#puppy" ).show( "slow");
+            });
+
+            // Toggle 
+            $( '#btn_toggle' ).click(function() 
+            {
+                $( ".toggle" ).toggle();
+            });
+
+            // Slide Down 
+            $( '#btn_slidedown' ).click(function() 
+            {
+                $( "#book_slidedown" ).slideDown( "slow", function() {
+                    // Book image slides down
+                });
+            });
+
+            // Slide Up 
+            $( '#btn_slideup' ).click(function() 
+            {
+                $( "#book_slideup" ).slideUp( 400, function() {
+                    // Cloud image slides up
+                });
+            });
+
+            // Fade In 
+            $( '#btn_fadein' ).click(function() 
+            {
+                $( "#pinkstar_fadein" ).fadeIn( 2000, function() {
+                    // Pink star fade in
+                });
+            });
+
+            // Fade Out 
+            $( '#btn_fadeout' ).click(function() 
+            {
+                $( "#castle_fadeout" ).fadeOut( 3000, function() {
+                    // Castle fade out
+                });
+            });
+
+            // Before 
+            $( '#btn_before' ).click(function() 
+            {
+                $( ".before" ).before("<p><strong>This text goes first!  </strong></p>");
+            });
+
+            // After 
+            $( '#btn_after' ).click(function() 
+            {
+                $( ".after" ).after("<p><strong>This text goes last!  </strong></p>");
+            });
+
+            // HTML
+            $( '#btn_html' ).click(function() 
+            {
+                $( ".center" ).html("You Changed The Heading!");
+            });
+
+            // Attr 
+            $( '#btn_attr' ).click(function() 
+            {
+                $( "p" ).attr(".before");
+            });
+
+        });
+            
+        </script>
+    </head>
+    <body> 
+        <div class="container">
+            <div class="header" >
+                <h2 class="center">My jQuery Tools</h2>
+                <image id="left-arrow" src="images/f-left_256-128.png" width="40" />
+                <image id="right-arrow" src="images/f-right_256-128.png" width="40" />
+                <image id="home-image" src="images/home.png" width="47" />
+            </div>
+
+            <div class="main">
+ 
+                <h1 class="method_name">AddClass</h1>
+                    <button id="btn_addClass" class="w3-btn">Add Class</button>
+                <div class="method_description">
+                    <p class="addClass">Click the button to add class "red" to this paragraph</p>
+                </div>
+                <hr class="style5">
+
+                <h1 class="method_name">SlideToggle</h1>
+                    <button id="btn_slideToggle" class="w3-btn">Slide Toggle</button>
+                <div class="method_description">
+                    <p class="slideToggle">Click the button to slidetoggle a hidden image</p>
+                    <img id="book" src="images/learning_jquery.jpg" alt="Learning jQuery" width="180" >
+                </div>
+                <hr class="style5">
+
+                <h1 class="method_name">Append</h1>
+                    <button id="btn_append" class="w3-btn">Append</button>
+                <div class="method_description">
+                    <p class="append">Click the button to append a new paragraph</p>
+                </div>
+                <hr class="style5">
+
+                <h1 class="method_name">Click</h1>
+                    <button id="btn_click" class="w3-btn">Click</button>
+                <div class="method_description">
+                    <p class="click">Click the button to trigger an event</p>
+                </div>
+                <hr class="style5">
+
+                <h1 class="method_name">Hide</h1>
+                    <button id="btn_hide" class="w3-btn">Hide</button>
+                <div class="method_description">
+                    <p class="hide">Click the button to hide this text.</p>
+                </div>
+                <hr class="style5">
+
+                <h1 class="method_name">Show</h1>
+                    <button id="btn_show" class="w3-btn">Show</button>
+                <div class="method_description">
+                    <p class="show">Click the button to show a cute picture.</p>
+                    <img id="puppy" src="images/cute-puppy.jpg" alt="Cute puppy">
+                </div>
+                <hr class="style5">
+
+                <h1 class="method_name">Toggle</h1>
+                    <button id="btn_toggle" class="w3-btn">Toggle</button>
+                <div class="method_description">
+                    <p class="toggle">Click the button to toggle this text on and off.</p>
+                </div>
+                <hr class="style5">
+
+                <h1 class="method_name">Slide Down</h1>
+                    <button id="btn_slidedown" class="w3-btn">Slide Down</button>
+                <div class="method_description">
+                    <p class="slidedown">Click the button to see an image slide down.</p>
+                    <img id="book_slidedown" src="images/learning_jquery.jpg" alt="Learning jQuery" width="180" >
+                </div>
+                <hr class="style5">
+
+                <h1 class="method_name">Slide Up</h1>
+                    <button id="btn_slideup" class="w3-btn">Slide Up</button>
+                <div class="method_description">
+                    <p class="slideup">Click the button to an image slide up.</p>
+                    <img id="book_slideup" src="images/cloud.jpg" alt="Cloud picture" width="180" >
+                </div>
+                <hr class="style5">
+
+                <h1 class="method_name">Fade In</h1>
+                    <button id="btn_fadein" class="w3-btn">Fade In</button>
+                <div class="method_description">
+                    <p class="fadein">Click the button to see an image fade in over a two second period.</p>
+                    <img id="pinkstar_fadein" src="images/pink_star.jpg" alt="Pink star picture" width="180" >
+                </div>
+                <hr class="style5">
+
+                <h1 class="method_name">Fade Out</h1>
+                    <button id="btn_fadeout" class="w3-btn">Fade Out</button>
+                <div class="method_description">
+                    <p class="fadeout">Click the button to see this image fade out over a three second period.</p>
+                    <img id="castle_fadeout" src="images/castle.jpg" alt="Castle picture" width="180" >
+                </div>
+                <hr class="style5">
+
+                <h1 class="method_name">Before</h1>
+                    <button id="btn_before" class="w3-btn">Before</button>
+                <div class="method_description">
+                    <p class="before">Click the button to see text inserted before this text.</p>
+                </div>
+                <hr class="style5">
+
+                <h1 class="method_name">After</h1>
+                    <button id="btn_after" class="w3-btn">After</button>
+                <div class="method_description">
+                    <p class="after">Click the button to see text inserted after this text.</p>
+                </div>
+                <hr class="style5">
+
+                <h1 class="method_name">HTML</h1>
+                    <button id="btn_html" class="w3-btn">HTML</button>
+                <div class="method_description">
+                    <p class="html">Click the button to change the heading of this page. (Scroll up to see the change.)</p>
+                </div>
+                <hr class="style5">
+
+                <h1 class="method_name">Attr</h1>
+                    <button id="btn_attr" class="w3-btn">Attr</button>
+                <div class="method_description">
+                    <p class="attr">Click the button to see the contents of the first "p" element.</p>
+                </div>
+                <hr class="style5">
+
+
+            </div>
+
+            <div class="footer">
+
+            </div>
+
+        </div>
+
+    <br /><br /><br />
+    </body>
+</html>

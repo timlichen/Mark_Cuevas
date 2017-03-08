@@ -1,0 +1,57 @@
+* {
+    /*outline: 1px solid red;*/
+    padding: 0px;
+    margin: 0px;
+}
+
+.card {
+    width: 400px;
+    border: 1px solid green;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;    
+}
+
+
+.contact_card {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+}
+
+.container {
+    width: 1000px;
+    margin: 0px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.0em;
+}
+
+.add_users {
+    display: inline-block;
+    width: 400px;
+}
+
+h1 {
+    width: 200px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+
+textarea {
+    vertical-align: top;
+}
+
+#btn_submit {
+    padding: 5px;
+}

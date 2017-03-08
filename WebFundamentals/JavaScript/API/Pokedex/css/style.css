@@ -1,0 +1,47 @@
+* {
+    /*outline: 1px solid red;*/
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+.main {
+    display: inline-block;
+    width: 600px;
+
+}
+
+.right-sidebar {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid green;
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-top: 85px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    padding: 5px;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 1.20em;
+}
+
+h3 {
+    font-size: 1.1em;
+    margin-left: 5px;
+    padding-bottom: -10px;
+}
+
+#height, #weight {
+    margin-left: 20px;
+}
+
