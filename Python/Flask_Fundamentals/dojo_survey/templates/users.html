@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Submitted Info</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Submitted Info</h1>
+            <div class="name">Name: {{ name }}</div>
+
+            <div>Dojo Location: {{ location }}</div>
+
+            <div class="language">Favorite Language: {{ language }}</div>
+
+            <div class="comment">Comment: {{ comment }}</div>
+
+            <div class="go_back"><link rel="stylesheet" href="#"> </div>
+        </div>
+    </body>
+</html>

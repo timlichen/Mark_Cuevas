@@ -1,0 +1,40 @@
+<html>
+    <head>
+       <title>Dojo Survey</title>
+       <link rel='stylesheet' href="{{ url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <div class="container">
+
+            <h1>Index Page</h1>
+            <h3>Create a User</h3>
+            <!-- read on to learn about form actions, we'll talk about the method in a later section -->
+            <form action='/users' method='POST'>
+                Name: <input type='text' name='name'><br /><br />
+                Dojo Location:  <select name="location">
+                                    <option value="">-- SELECT --</option>
+                                    <option value="Washington, DC">Washingon, DC</option>
+                                    <option value="Los Angeles">Los Angeles</option>
+                                    <option value="New York">New York</option>
+                                    <option value="Seattle">Seattle</option>
+                                </select>
+                <br /><br />
+                Favorite Language: <select name="language">
+                                    <option value="">-- SELECT --</option>
+                                    <option value="python">Python</option>
+                                    <option value="javascript">JavaScript</option>
+                                    <option value="html">HTML</option>
+                                    <option value="css">CSS</option>
+                                </select>
+                <br /><br />
+                Comments: <textarea name="comment" rows="4" cols="50">
+
+                          </textarea>
+                <br /><br />          
+                <input type='submit' value='Submit'>
+            </form>
+
+        </div>
+
+    </body>
+</html>
